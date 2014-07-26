@@ -77,8 +77,11 @@ class InputViewController: UIViewController {
     func go(){
         
         alartLabel.text = "correct"
-        let viewController = BangViewController(nibName: nil, bundle: nil)
+//        let viewController = BangViewController()
         //self.presentationController(viewController)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("BangViewController") as UIViewController
         self.presentViewController(viewController, animated: true, completion: nil)
         
     }
