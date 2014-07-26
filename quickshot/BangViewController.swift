@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class BangViewController: UIViewController {
 
@@ -21,7 +22,12 @@ class BangViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func gun(){
+        var soundID:SystemSoundID = 0;
+        var soundURL = NSBundle.mainBundle().URLForResource("gun", withExtension: "aif")
+        AudioServicesCreateSystemSoundID(soundURL, &soundID)
+        AudioServicesPlaySystemSound (soundID);
+    }
     /*
     // MARK: - Navigation
 
