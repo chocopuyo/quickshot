@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class InputViewController: UIViewController {
     
@@ -55,6 +56,13 @@ class InputViewController: UIViewController {
             inputNumber = inputNumber*10 + sender.tag
             inputLabel.text = inputNumber.description
     
+            
+            var soundID:SystemSoundID = 0;
+            var soundURL = NSBundle.mainBundle().URLForResource("gun", withExtension: "aif")
+            AudioServicesCreateSystemSoundID(soundURL, &soundID)
+            AudioServicesPlaySystemSound (soundID);
+            
+            
             arrayCount++
             NSLog ("%i", arrayCount)
             
