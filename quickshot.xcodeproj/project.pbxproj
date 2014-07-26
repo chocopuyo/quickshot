@@ -39,6 +39,7 @@
 		828F8A8019839C1600149FC3 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 828F8A6A19839C1600149FC3 /* title.png */; };
 		828F8A8119839C1600149FC3 /* training.png in Resources */ = {isa = PBXBuildFile; fileRef = 828F8A6B19839C1600149FC3 /* training.png */; };
 		828F8A8219839C1600149FC3 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = 828F8A6C19839C1600149FC3 /* win.png */; };
+		828F8A841983A33700149FC3 /* screen_type.png in Resources */ = {isa = PBXBuildFile; fileRef = 828F8A831983A33700149FC3 /* screen_type.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		828F8A6A19839C1600149FC3 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		828F8A6B19839C1600149FC3 /* training.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = training.png; sourceTree = "<group>"; };
 		828F8A6C19839C1600149FC3 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win.png; sourceTree = "<group>"; };
+		828F8A831983A33700149FC3 /* screen_type.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen_type.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				828F8A5719839C1600149FC3 /* battle.png */,
 				828F8A5819839C1600149FC3 /* BG.png */,
 				828F8A5919839C1600149FC3 /* button_1.png */,
+				828F8A831983A33700149FC3 /* screen_type.png */,
 				828F8A5A19839C1600149FC3 /* button_2.png */,
 				828F8A5B19839C1600149FC3 /* button_3.png */,
 				828F8A5C19839C1600149FC3 /* button_4.png */,
@@ -281,6 +284,7 @@
 				828F8A8219839C1600149FC3 /* win.png in Resources */,
 				828F8A7D19839C1600149FC3 /* screen_win.png in Resources */,
 				828F8A7E19839C1600149FC3 /* shot.png in Resources */,
+				828F8A841983A33700149FC3 /* screen_type.png in Resources */,
 				828F8A7419839C1600149FC3 /* button_6.png in Resources */,
 				828F8A7819839C1600149FC3 /* line.png in Resources */,
 				828F8A7019839C1600149FC3 /* button_2.png in Resources */,
