@@ -27,6 +27,9 @@ class RoomViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func addRoom() {
+        println("pushed!")
+    }
     
     /*
     // MARK: - Navigation
