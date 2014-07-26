@@ -12,6 +12,10 @@
 		319A7A321983565800E94C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319A7A301983565800E94C62 /* Main.storyboard */; };
 		319A7A341983565800E94C62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319A7A331983565800E94C62 /* Images.xcassets */; };
 		319A7A401983565800E94C62 /* quickshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A7A3F1983565800E94C62 /* quickshotTests.swift */; };
+		319A7A4C1983606E00E94C62 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A7A4B1983606E00E94C62 /* InputViewController.swift */; };
+		319A7A4E1983608E00E94C62 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A7A4D1983608E00E94C62 /* PlayerViewController.swift */; };
+		319A7A50198360A600E94C62 /* BangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A7A4F198360A600E94C62 /* BangViewController.swift */; };
+		319A7A52198360F600E94C62 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319A7A51198360F600E94C62 /* RoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		319A7A391983565800E94C62 /* quickshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		319A7A3E1983565800E94C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		319A7A3F1983565800E94C62 /* quickshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickshotTests.swift; sourceTree = "<group>"; };
+		319A7A4B1983606E00E94C62 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		319A7A4D1983608E00E94C62 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		319A7A4F198360A600E94C62 /* BangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangViewController.swift; sourceTree = "<group>"; };
+		319A7A51198360F600E94C62 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,10 @@
 				319A7A2C1983565800E94C62 /* AppDelegate.swift */,
 				319A7A2E1983565800E94C62 /* ViewController.swift */,
 				319A7A301983565800E94C62 /* Main.storyboard */,
+				319A7A51198360F600E94C62 /* RoomViewController.swift */,
+				319A7A4F198360A600E94C62 /* BangViewController.swift */,
+				319A7A4D1983608E00E94C62 /* PlayerViewController.swift */,
+				319A7A4B1983606E00E94C62 /* InputViewController.swift */,
 				319A7A331983565800E94C62 /* Images.xcassets */,
 				319A7A2A1983565800E94C62 /* Supporting Files */,
 			);
@@ -208,8 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319A7A50198360A600E94C62 /* BangViewController.swift in Sources */,
 				319A7A2F1983565800E94C62 /* ViewController.swift in Sources */,
+				319A7A4E1983608E00E94C62 /* PlayerViewController.swift in Sources */,
+				319A7A52198360F600E94C62 /* RoomViewController.swift in Sources */,
 				319A7A2D1983565800E94C62 /* AppDelegate.swift in Sources */,
+				319A7A4C1983606E00E94C62 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
