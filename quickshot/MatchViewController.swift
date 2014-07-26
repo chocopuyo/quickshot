@@ -1,14 +1,14 @@
 //
-//  RoomViewController.swift
+//  MatchViewController.swift
 //  quickshot
 //
-//  Created by InoueAyaka on 2014/07/26.
-//  Copyright (c) 2014年 Ayaka Inoue. All rights reserved.
+//  Created by yuhi on 7/26/14.
+//  Copyright (c) 2014 Ayaka Inoue. All rights reserved.
 //
 
 import UIKit
 
-class RoomViewController: UIViewController {
+class MatchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +21,9 @@ class RoomViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-
-    @IBAction func gooBack() {
+    @IBAction func goBack() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
     /*
     // MARK: - Navigation
 
