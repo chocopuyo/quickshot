@@ -9,17 +9,43 @@
 import UIKit
 
 class InputViewController: UIViewController {
+    
+    
+    
+    var randomNumber : Int?
+    @IBOutlet var label :UILabel!
+    
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+          randomNumber  = Int(arc4random()) % 999999
+        NSLog ("%i", randomNumber as Int)
+        label.text = "aa"
+
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    
+    
     
 
     /*
