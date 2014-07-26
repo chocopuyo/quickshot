@@ -11,42 +11,80 @@ import UIKit
 class InputViewController: UIViewController {
     
     
-    
-    var randomNumber : Int?
+    let digit :Int = 7
+    var randomNumber : Int = 0
+    var inputNumber :Int = 0
     @IBOutlet var label :UILabel!
+    @IBOutlet var inputLabel :UILabel!
+    @IBOutlet var alartLabel :UILabel!
     
     
     
+    var inputArray : [Int] = [0,0,0,0,0,0,0]
+    var randomArray : [Int] = [0,0,0,0,0,0,0]
     
+    var a = 0
     
+    var arrayCount :Int = 0
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
 
-          randomNumber  = Int(arc4random()) % 999999
-        NSLog ("%i", randomNumber as Int)
-        label.text = "aa"
+        //答えの生成
+        for i in 0...(digit-1){
+            
+            randomArray[i] = (Int(arc4random()) % 8 )+1
+            
+            NSLog ("%i", randomArray[i])
+            
+            randomNumber = randomNumber*10 + randomArray[i]
+            label.text = randomNumber.description
 
+        }
         
-        
+
+    }
+    
+
+    @IBAction func tapNum(sender:UIButton){
+
+        if sender.tag == randomArray[arrayCount] {
+            
+            inputNumber = inputNumber*10 + sender.tag
+            inputLabel.text = inputNumber.description
+    
+            arrayCount++
+            NSLog ("%i", arrayCount)
+            
+            if arrayCount == 7{
+                self.go()
+            }
+            
+       
+            
+        }else{
+            
+           alartLabel.text = "wrong"
+            
+        }
         
         
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func go(){
+        
+        alartLabel.text = "correct"
+        let viewController = BangViewController(nibName: nil, bundle: nil)
+        //self.presentationController(viewController)
+        self.presentViewController(viewController, animated: true, completion: nil)
+        
     }
     
     
-    
-    
-    
-    
+
 
     /*
     // MARK: - Navigation
@@ -57,5 +95,14 @@ class InputViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
 
 }
